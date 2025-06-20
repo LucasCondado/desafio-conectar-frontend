@@ -55,6 +55,12 @@ Para rodar os testes automatizados:
 ```sh
 npm test
 ```
+
+## Observações
+
+- Certifique-se de que o backend está rodando e configurado corretamente para que o frontend funcione plenamente.
+- As URLs e portas de comunicação com o backend podem ser ajustadas no código conforme necessário.
+
 ---
 
 Desenvolvido para o desafio Conéctar.
