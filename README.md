@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+# desafio-conectar-frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é o frontend do desafio Conéctar, desenvolvido em React.
 
-## Available Scripts
+## Tecnologias Utilizadas
 
-In the project directory, you can run:
+- [React](https://react.dev/)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [Axios](https://axios-http.com/)
+- [React Router DOM](https://reactrouter.com/)
+- [Context API](https://react.dev/reference/react/useContext)
+- [Jest](https://jestjs.io/) (para testes)
+- [Create React App](https://github.com/facebook/create-react-app)
 
-### `npm start`
+## Código Fonte
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Repositório Backend](https://github.com/LucasCondado/desafio-conectar-backend)
+- [Repositório Frontend](https://github.com/LucasCondado/desafio-conectar-frontend)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Como executar o projeto
 
-### `npm test`
+### Pré-requisitos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js 18+
+- npm 9+
 
-### `npm run build`
+### Instalação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone este repositório:
+    ```sh
+    git clone https://github.com/LucasCondado/desafio-conectar-frontend.git
+    ```
+2. Acesse a pasta do projeto:
+    ```sh
+    cd desafio-conectar-frontend
+    ```
+3. Instale as dependências:
+    ```sh
+    npm install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Execução
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para iniciar a aplicação em modo de desenvolvimento, execute:
+```sh
+npm start
+```
+Acesse [http://localhost:3000](http://localhost:3000) no navegador.
 
-### `npm run eject`
+### Testes
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Para rodar os testes automatizados:
+```sh
+npm test
+```
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Desenvolvido para o desafio Conéctar.
