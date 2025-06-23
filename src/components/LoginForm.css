@@ -1,0 +1,19 @@
+.login-container {
+  max-width: 400px;
+  margin: 40px 0 0 40px; /* margem à esquerda */
+  padding: 24px 0;
+}
+
+.login-container form {
+  width: 100%;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 300px;      /* largura menor */
+  min-width: 180px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  display: block;
+}

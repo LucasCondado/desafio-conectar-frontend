@@ -1,0 +1,48 @@
+@import './RegisterForm.css';
+.register-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 32px 0 24px 0;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: #388e3c;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+  width: 300px;
+  max-width: 100%;
+  min-width: 180px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  display: block;
+  background: #eaf6ff;
+  border: 1px solid #ccc;
+  outline: none;
+  box-shadow: none;
+}
+
+await axios.post('/api/auth/register', { name, email, password });

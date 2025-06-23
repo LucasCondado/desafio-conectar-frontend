@@ -14,7 +14,7 @@ Este é o frontend do desafio Conéctar, desenvolvido em React.
 - [Jest](https://jestjs.io/) (para testes)
 - [Create React App](https://github.com/facebook/create-react-app)
 
-## Código Fonte
+## Código Fontep
 
 - [Repositório Backend](https://github.com/LucasCondado/desafio-conectar-backend)
 - [Repositório Frontend](https://github.com/LucasCondado/desafio-conectar-frontend)

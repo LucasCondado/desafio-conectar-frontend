@@ -1,0 +1,261 @@
+body, .app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
+  font-family: 'Tajawal', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px;
+}
+
+h2 {
+  color: #388e3c;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+label {
+  font-weight: 600;
+  color: #388e3c;
+}
+
+input, select, button {
+  font-family: inherit;
+  font-size: 1rem;
+  margin-top: 6px;
+  margin-bottom: 18px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #bdbdbd;
+}
+
+button, .save-button {
+  background: #388e3c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover, .save-button:hover {
+  background: #2e7031;
+}
+
+.navbar {
+  background: #388e3c;
+  color: #fff;
+  padding: 16px 0;
+  margin-bottom: 32px;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.navbar-brand a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 32px;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  float: right;
+  margin-right: 32px;
+}
+
+.navbar-item {
+  color: #fff;
+  margin-left: 24px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar-item:hover {
+  color: #c8e6c9;
+}
+
+.logout-button {
+  background: #d32f2f;
+  border-radius: 6px;
+  padding: 8px 16px;
+  margin-left: 24px;
+  margin-top: 4px;
+  transform: translateY(6px); /* ajuste o valor conforme desejar */
+}
+
+td button + button,
+td a + button {
+  margin-left: 8px;
+}
+
+/* Espaço entre selects e botões de filtros e ordenação */
+.filter-bar > * + * {
+  margin-left: 12px;
+}
+
+.error {
+  color: #d32f2f;
+  margin-top: 8px;
+  font-weight: 500;
+}
+.success {
+  color: #388e3c;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #388e3c;
+  border-top: 3px solid #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+button[type="submit"][disabled] {
+  background: #bdbdbd;
+  cursor: not-allowed;
+}
+
+/* Grade de fundo para o container da lista */
+.user-list-container {
+  position: relative;
+  background-color: #fff;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #e8f5e9; /* verde claro preenchido */
+  border-radius: 0 !important; /* força borda quadrada */
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.users-table th, .users-table td {
+  border: 1px solid #bdbdbd;
+  padding: 4px 8px; /* ainda menos altura */
+  text-align: center;
+  background: transparent;
+}
+
+.users-table th {
+  background: #a5d6a7; /* cabeçalho um pouco mais escuro */
+  color: #222;
+  font-weight: bold;
+}
+
+/* Centraliza a coluna Nome */
+.users-table th:first-child,
+.users-table td:first-child {
+  text-align: center !important;
+}
+
+.users-table tr:last-child td {
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.users-table tr:hover td {
+  background: #c8e6c9; /* efeito hover suave */
+}
+
+.add-user-button {
+  background: #ffd600;
+  color: #222;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  text-decoration: none;
+  margin-bottom: 16px;
+  display: inline-block;
+  transition: background 0.2s;
+}
+.add-user-button:hover {
+  background: #ffe066;
+  color: #222;
+}
+
+.usuarios-btn,
+.novo-usuario-btn {
+  background: #c8e6c9;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: bold;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.usuarios-btn:hover,
+.novo-usuario-btn:hover {
+  background: #a5d6a7;
+}
+
+.ola-teste {
+  color: #fff;           /* branco */
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-right: 8px;
+  background: none;
+  padding: 0;
+}
+
+/* Centraliza e limita a largura dos campos do formulário de login */
+.login-form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px 0;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  max-width: 400px;
+  min-width: 180px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.register-form .form-group input[type="text"],
+.register-form .form-group input[type="email"],
+.register-form .form-group input[type="password"] {
+  width: 300px !important;
+  max-width: 100%;
+  min-width: 180px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  display: block;
+  background: #eaf6ff;
+  border: 1px solid #ccc;
+  outline: none;
+  box-shadow: none;
+}
+
+.register-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 32px 0 24px 0;
+}
