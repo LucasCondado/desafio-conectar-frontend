@@ -1,25 +1,45 @@
 # desafio-conectar-frontend
 
-Este é o frontend do desafio Conéctar, desenvolvido em React.
+Frontend do desafio Conéctar, desenvolvido em React + TypeScript.
 
-## Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
 - [React](https://react.dev/)
-- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Axios](https://axios-http.com/)
 - [React Router DOM](https://reactrouter.com/)
 - [Context API](https://react.dev/reference/react/useContext)
 - [Jest](https://jestjs.io/) (para testes)
 - [Create React App](https://github.com/facebook/create-react-app)
 
-## Código Fontep
+## 📦 Código Fonte
 
 - [Repositório Backend](https://github.com/LucasCondado/desafio-conectar-backend)
 - [Repositório Frontend](https://github.com/LucasCondado/desafio-conectar-frontend)
 
-## Como executar o projeto
+## 🌐 Demonstração Online
+
+- **Frontend:** [https://conectar-frontend-lucascondado.herokuapp.com/](https://conectar-frontend-lucascondado.herokuapp.com/)
+- **Backend:** [https://teste-conectar-back-da3221d35049.herokuapp.com/](https://teste-conectar-back-da3221d35049.herokuapp.com/)
+
+## 👤 Usuário de Teste
+
+- **Admin:**  
+  Email: `admin@admin.com`  
+  Senha: `adm123`
+
+- **Usuário comum:**  
+  (Cadastre um novo usuário via tela de cadastro)
+
+## ⚙️ Variáveis de Ambiente
+
+Crie um arquivo `.env` na raiz do projeto com:
+
+```
+REACT_APP_API_URL=https://teste-conectar-back-da3221d35049.herokuapp.com
+```
+
+## 🛠️ Como executar o projeto
 
 ### Pré-requisitos
 
@@ -28,38 +48,63 @@ Este é o frontend do desafio Conéctar, desenvolvido em React.
 
 ### Instalação
 
-1. Clone este repositório:
-    ```sh
-    git clone https://github.com/LucasCondado/desafio-conectar-frontend.git
-    ```
-2. Acesse a pasta do projeto:
-    ```sh
-    cd desafio-conectar-frontend
-    ```
-3. Instale as dependências:
-    ```sh
-    npm install
-    ```
+```sh
+git clone https://github.com/LucasCondado/desafio-conectar-frontend.git
+cd desafio-conectar-frontend
+npm install
+```
 
-### Execução
+### Execução em desenvolvimento
 
-Para iniciar a aplicação em modo de desenvolvimento, execute:
 ```sh
 npm start
 ```
-Acesse [http://localhost:3000](http://localhost:3000) no navegador.
+Acesse [http://localhost:3000](http://localhost:3000).
+
+### Build de produção
+
+```sh
+npm run build
+```
 
 ### Testes
 
-Para rodar os testes automatizados:
 ```sh
 npm test
 ```
 
-## Observações
+### Deploy no Heroku
 
-- Certifique-se de que o backend está rodando e configurado corretamente para que o frontend funcione plenamente.
-- As URLs e portas de comunicação com o backend podem ser ajustadas no código conforme necessário.
+1. Faça o build:
+   ```sh
+   npm run build
+   ```
+2. Faça login no Heroku e crie o app:
+   ```sh
+   heroku login
+   heroku create conectar-frontend-lucascondado
+   ```
+3. Configure a variável de ambiente:
+   ```sh
+   heroku config:set REACT_APP_API_URL=https://teste-conectar-back-da3221d35049.herokuapp.com --app conectar-frontend-lucascondado
+   ```
+4. Faça o deploy:
+   ```sh
+   git push heroku main
+   ```
+
+## 🔗 Integração com Backend
+
+O frontend consome a API do backend NestJS.  
+A URL do backend é definida pela variável `REACT_APP_API_URL`.
+
+## 📋 Funcionalidades
+
+- Login e cadastro de usuários
+- Listagem, filtro e ordenação de usuários (admin)
+- Visualização e edição de perfil (usuário comum)
+- Alteração de senha
+- Responsivo e seguro
 
 ---
 
