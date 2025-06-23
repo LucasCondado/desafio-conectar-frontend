@@ -63,9 +63,10 @@ export const LoginForm: React.FC<{ setCurrentUser: React.Dispatch<React.SetState
       <input
         type="password"
         placeholder="Senha"
+        required
         value={password}
         onChange={e => setPassword(e.target.value)}
-        required
+        autoComplete="current-password"
       />
       <button type="submit" disabled={success}>Entrar</button>
       {error && <p style={{ color: 'red' }}>{error}</p>}
